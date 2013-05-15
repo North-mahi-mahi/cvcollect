@@ -3,3 +3,7 @@ en:
     index:
       welcome: "Welcome !"
       visit_in_french: "Site en Français"
+  devise:
+  	failure:
+  		user:
+  			unauthenticated: "Non identifiée"
