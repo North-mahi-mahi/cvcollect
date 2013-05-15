@@ -1,4 +1,6 @@
 Cvcollect::Application.routes.draw do
+  devise_for :users
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -58,6 +60,7 @@ Cvcollect::Application.routes.draw do
     
   scope ':locale', :constraints=>{:locale=>/en|fr/} do
     root :to=>'pages#index'
+    resources :users
   end
 
   root :to=>'pages#index'

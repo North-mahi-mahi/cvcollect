@@ -1,1 +1,1 @@
-= t('.welcome')
+= I18n.locale == :fr ? link_to(t('.visit_in_english'), root_path(locale:'en')) : link_to(t('.visit_in_french'), root_path(locale:'fr'))
